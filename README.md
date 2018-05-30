@@ -15,3 +15,8 @@ jdk versão 8 (versão utilizada 8u161); <br />
 
 Criação de layouts:
 Scene builder 8.3
+
+### Screenshots
+
+<img src = "https://user-images.githubusercontent.com/32683162/40751269-d603be2e-6440-11e8-838e-176d30c5c5b6.PNG">
+<img src = "https://user-images.githubusercontent.com/32683162/40751268-d58699bc-6440-11e8-9bde-c50a6f58c008.PNG">
