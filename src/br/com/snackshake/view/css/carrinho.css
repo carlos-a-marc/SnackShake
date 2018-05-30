@@ -1,0 +1,11 @@
+.item:hover {
+    -fx-background-color: #f4f4f4;
+}
+
+.itens {
+	-fx-background-color: #ffffff;
+}
+.itens .viewport {
+	-fx-background-color: #ffffff;
+}
+

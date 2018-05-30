@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="320.0" prefWidth="300.0" style="-fx-background-color: #ffffff;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="lblNome" layoutX="26.0" layoutY="33.0" maxHeight="50.0" prefHeight="50.0" prefWidth="256.0" text="Proin rhoncus quam eu arcu tincidunt" textFill="#4e4d4d" wrapText="true" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="18.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPreco" layoutX="222.0" layoutY="97.0" text="R$ 3,99" textFill="#4e4d4d" AnchorPane.rightAnchor="22.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="143.0" text="Pague em até 2x  no cartão" textFill="#4e4d4d" AnchorPane.rightAnchor="22.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="25.0" fitWidth="120.0" layoutX="83.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/credit-cards-payment.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" layoutX="198.0" layoutY="176.0" spacing="5.0" AnchorPane.rightAnchor="22.0">
+         <children>
+            <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/mastercard.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/visa-pay-logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="40.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/barcode-product.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <ImageView fitHeight="25.0" fitWidth="20.0" layoutX="172.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/star.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="120.0" layoutX="134.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/delivery-van.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="172.0" layoutY="216.0" text="Fromas de entrega" textFill="#4e4d4d" AnchorPane.rightAnchor="22.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="257.0" text="Grátis" textFill="#34caef" AnchorPane.rightAnchor="22.0" />
+      <JFXComboBox focusColor="#34caef" layoutX="96.0" layoutY="253.0" prefHeight="25.0" prefWidth="140.0" unFocusColor="#34caef" />
+      <VBox alignment="CENTER" layoutX="275.0" onMouseClicked="#mostrarInfoNutricional" style="-fx-background-color: #34caef;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/216254-32.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+      <VBox alignment="CENTER" layoutX="4.0" layoutY="4.0" onMouseClicked="#fecharInformacao" style="-fx-background-color: #34caef;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="24.0" fitWidth="21.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/216437-32.png" />
+               </image>
+            </ImageView>
+         </children>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </VBox>
+   </children>
+</fx:root>

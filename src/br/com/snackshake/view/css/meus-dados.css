@@ -1,0 +1,15 @@
+.header {
+    -fx-background-color: #232f35;
+}
+
+.foto:hover {
+    -fx-blend-mode: soft-light;
+}
+
+.dados-conta {
+    -fx-background-color: #ffffff;
+}
+
+.dados-conta .viewport {
+    -fx-background-color: #ffffff;
+}

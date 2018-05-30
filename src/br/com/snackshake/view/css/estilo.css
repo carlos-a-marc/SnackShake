@@ -1,0 +1,17 @@
+.background {
+	-fx-background-image: url(../img/teste2.jpg);
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+	-fx-background-size: 100%;
+	
+}
+.pesquisar:focused {
+	-fx-faint-focus-color: transparent;
+	-fx-focus-color: rgba(0,0,0,.2);
+}
+.area-produto {
+	-fx-background-color: #f3f5f5;
+}
+.area-produto .viewport {
+	-fx-background-color: #f3f5f5;
+}

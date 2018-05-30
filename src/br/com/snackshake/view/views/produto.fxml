@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root minWidth="220.0" prefHeight="280.0" prefWidth="220.0" style="-fx-background-color: #ffffff;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgImagem" fitHeight="115.0" fitWidth="141.0" layoutX="47.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNome" layoutX="14.0" layoutY="144.0" maxHeight="19.0" text="Lorem ipsum dolor sit amet" textFill="#34caef" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDescricao" layoutX="14.0" layoutY="165.0" maxHeight="48.0" text="Pellentesque rhoncus, nulla a mattis o mi turpis vehicula risus, eget tempor leo tellus." textFill="#4e4d4d" wrapText="true" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="17.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="133.0" layoutY="245.0" onMouseClicked="#addAoCarrinho" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #34caef; -fx-background-radius: 2;" text="Add" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="19.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/cart.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="RIGHT" layoutX="55.0" layoutY="245.0" onMouseClicked="#informacaoProduto" prefHeight="25.0" prefWidth="70.0" style="-fx-background-color: #34caef; -fx-background-radius: 2;" text="Info" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="15.0" fitWidth="13.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/rdf-resource-description-framework-symbol.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="14.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/like.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="35.0" layoutY="221.0" text="1217 gostam" textFill="#4e4d4d">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</fx:root>

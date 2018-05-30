@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #ffffff;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="25.0" layoutY="45.0" text="ITEM" textFill="#4e4d4d">
+         <font>
+            <Font name="Sitka Text" size="16.0" />
+         </font>
+      </Label>
+      <HBox layoutX="713.0" layoutY="45.0" spacing="100.0" AnchorPane.rightAnchor="120.0">
+         <children>
+            <Label text="QTD" textFill="#4e4d4d">
+               <font>
+                  <Font name="Sitka Text" size="16.0" />
+               </font>
+            </Label>
+            <Label text="PREÇO" textFill="#4e4d4d">
+               <font>
+                  <Font name="Sitka Text" size="16.0" />
+               </font>
+            </Label>
+            <Label text="SUBTOTAL" textFill="#4e4d4d">
+               <font>
+                  <Font name="Sitka Text" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Separator layoutX="25.0" layoutY="85.0" opacity="0.33" prefWidth="200.0" scaleY="0.5" style="-fx-background-color: #4c4c4d;" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" />
+      <ScrollPane fitToHeight="true" fitToWidth="true" hbarPolicy="NEVER" layoutX="25.0" layoutY="88.0" prefHeight="352.0" prefWidth="950.0" styleClass="itens" stylesheets="@../css/carrinho.css" vbarPolicy="NEVER" AnchorPane.bottomAnchor="160.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="88.0">
+         <content>
+            <VBox fx:id="paneItensCarrinho" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="5.0" />
+         </content>
+      </ScrollPane>
+      <AnchorPane prefHeight="160.0" prefWidth="1000.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+         <children>
+            <HBox layoutX="718.0" layoutY="49.0" spacing="6.0" AnchorPane.rightAnchor="140.0">
+               <children>
+                  <Label text="TOTAL:" textFill="#0bc367">
+                     <font>
+                        <Font name="Sitka Text" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="63.0" layoutY="10.0" text="R$" textFill="#0bc367">
+                     <font>
+                        <Font name="Sitka Text" size="20.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblTotalCompra" text="0" textFill="#0bc367">
+                     <font>
+                        <Font name="Sitka Text" size="20.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Separator layoutX="625.0" layoutY="90.0" prefHeight="3.0" prefWidth="350.0" AnchorPane.rightAnchor="25.0" />
+            <JFXButton layoutX="685.0" layoutY="101.0" prefHeight="35.0" prefWidth="230.0" style="-fx-background-color: #0bc367;" text="FINALIZAR COMPRA" textFill="WHITE" AnchorPane.rightAnchor="85.0">
+               <font>
+                  <Font name="Sitka Text Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <HBox alignment="CENTER" layoutX="757.0" layoutY="21.0" spacing="5.0" AnchorPane.rightAnchor="156.0">
+               <children>
+                  <Label text="FRETE:" textFill="#4e4d4d">
+                     <font>
+                        <Font name="Sitka Text" size="9.0" />
+                     </font>
+                  </Label>
+                  <Label text="GRÁTIS" textFill="#4e4d4d">
+                     <font>
+                        <Font name="Sitka Text" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

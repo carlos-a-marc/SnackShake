@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="100.0" prefWidth="950.0" styleClass="item" stylesheets="@../css/carrinho.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fx:id="imgImagem" fitHeight="78.0" fitWidth="89.0" layoutX="28.0" layoutY="11.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/img1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblNome" layoutX="140.0" layoutY="37.0" maxHeight="36.0" text="Lorem ipsum dolor sit amet" textFill="#4e4d4d" wrapText="true" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="612.0">
+         <font>
+            <Font name="Sitka Text" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblContadorQtd" alignment="CENTER" layoutX="485.0" layoutY="29.0" prefHeight="35.0" prefWidth="40.0" style="-fx-border-color: #cfcfcf; -fx-border-width: 2;" text="1" textFill="#4e4d4d" AnchorPane.rightAnchor="425.0">
+         <font>
+            <Font name="Sitka Text" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="531.0" layoutY="29.0" onMouseClicked="#adicinarMaisUm" text="+" textFill="#8a8989" AnchorPane.rightAnchor="410.0">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label layoutX="531.0" layoutY="47.0" onMouseClicked="#RemoverUm" text="-" textFill="#8a8989" AnchorPane.rightAnchor="410.0">
+         <font>
+            <Font name="Consolas Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <Label fx:id="lblPreco" layoutX="623.0" layoutY="37.0" text="R$ 5.90" textFill="#4c4c4d" AnchorPane.rightAnchor="264.0">
+         <font>
+            <Font name="Sitka Text" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblSubtotal" layoutX="774.0" layoutY="37.0" text="R$ 5.90" textFill="#0bc367" AnchorPane.rightAnchor="112.0">
+         <font>
+            <Font name="Sitka Text" size="15.0" />
+         </font>
+      </Label>
+      <Separator opacity="0.51" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Label layoutX="886.0" layoutY="42.0" onMouseClicked="#removerItem" text="REMOVER" textFill="#f0840e" underline="true" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Sitka Text" size="9.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+   </children>
+</fx:root>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/meus-dados.css" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="140.0" prefWidth="800.0" styleClass="header" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <VBox alignment="CENTER" fillWidth="false" layoutY="15.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <children>
+                  <AnchorPane VBox.vgrow="NEVER">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="110.0" prefWidth="110.0" style="-fx-border-color: #ffffff; -fx-border-radius: 100; -fx-border-width: 2;">
+                           <children>
+                              <ImageView fx:id="imgFoto" fitHeight="97.0" fitWidth="92.0" onMouseClicked="#editarInfo" onMouseEntered="#mouseSobreFoto" onMouseExited="#mouseForaFoto" pickOnBounds="true" preserveRatio="true" styleClass="foto">
+                                 <image>
+                                    <Image url="@../img/cliente01.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label layoutX="121.0" layoutY="19.0" text="CLIENTE" textFill="WHITE">
+                           <font>
+                              <Font size="10.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblNameHeader" layoutX="120.0" layoutY="39.0" text="Emma Stone" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="lblmailHeader" layoutX="141.0" layoutY="72.0" text="emma@gmail.com" textFill="WHITE" />
+                        <ImageView fitHeight="14.0" fitWidth="14.0" layoutX="122.0" layoutY="74.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../img/message-closed-envelope-white.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="imgAlterarFoto" fitHeight="18.0" fitWidth="18.0" layoutX="2.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                           <image>
+                              <Image url="@../img/103592-32.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <ScrollPane fitToHeight="true" fitToWidth="true" prefHeight="200.0" prefWidth="200.0" styleClass="dados-conta" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+         <content>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="15.0">
+               <children>
+                  <AnchorPane minHeight="-Infinity" prefHeight="160.0" prefWidth="798.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="DADOS DA CONTA" textFill="#4e4d4d">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="57.0" layoutY="42.0" opacity="0.29" prefHeight="3.0" prefWidth="550.0" AnchorPane.leftAnchor="57.0" />
+                        <Label layoutX="102.0" layoutY="62.0" text="Usuário:" textFill="#4e4d4d" />
+                        <Label layoutX="109.0" layoutY="92.0" text="E-mail:" textFill="#4e4d4d" />
+                        <Label layoutX="110.0" layoutY="123.0" text="Senha:" textFill="#4e4d4d" />
+                        <HBox layoutX="166.0" layoutY="62.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblUsuario" text="Emma Stonne" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltUsuario" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="166.0" layoutY="92.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblEmail" text="emma@gmail.com" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltEmail" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="166.0" layoutY="123.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblSenha" text="emma" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltSenha" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="-Infinity" prefHeight="160.0" prefWidth="798.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="DADOS PESSOAIS" textFill="#4e4d4d">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="57.0" layoutY="42.0" opacity="0.29" prefHeight="3.0" prefWidth="550.0" AnchorPane.leftAnchor="57.0" />
+                        <Label layoutX="109.0" layoutY="62.0" text="Nome:" textFill="#4e4d4d" />
+                        <Label layoutX="79.0" layoutY="92.0" text="Documento:" textFill="#4e4d4d" />
+                        <Label layoutX="96.0" layoutY="123.0" text="Telefone:" textFill="#4e4d4d" />
+                        <HBox layoutX="165.0" layoutY="62.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblNome" text="Emma Stonne" textFill="#4e4d4d" />
+                           </children>
+                        </HBox>
+                        <HBox layoutX="165.0" layoutY="92.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblDocumento" text="967.756.675-35" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltDocumento" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="165.0" layoutY="123.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblTelefone" text="31 96745-6453" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltTelefone" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="-Infinity" prefHeight="160.0" prefWidth="798.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="ENDEREÇO" textFill="#4e4d4d">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="57.0" layoutY="42.0" opacity="0.29" prefHeight="3.0" prefWidth="550.0" AnchorPane.leftAnchor="57.0" />
+                        <Label layoutX="121.0" layoutY="62.0" text="Rua:" textFill="#4e4d4d" />
+                        <Label layoutX="110.0" layoutY="92.0" text="Bairro:" textFill="#4e4d4d" />
+                        <Label layoutX="104.0" layoutY="123.0" prefHeight="17.0" prefWidth="41.0" text="Cidade:" textFill="#4e4d4d" />
+                        <HBox layoutX="164.0" layoutY="62.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblRua" text="Nossa Senhora" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltRua" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="164.0" layoutY="92.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblBairro" text="Novo Horizonte" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltBairro" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Label layoutX="177.0" layoutY="123.0" prefHeight="17.0" prefWidth="34.0" textFill="#4e4d4d" />
+                        <HBox layoutX="166.0" layoutY="123.0" spacing="10.0">
+                           <children>
+                              <Label fx:id="lblCidade" text="João Monlevade, MG" textFill="#4e4d4d" />
+                              <Label fx:id="lblAltCidade" onMouseClicked="#editarInfo" text="Alterar" textFill="#34caef">
+                                 <font>
+                                    <Font name="System Bold" size="9.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane minHeight="-Infinity" prefHeight="125.0" prefWidth="798.0">
+                     <children>
+                        <Label layoutX="57.0" layoutY="14.0" text="CONFIRMAÇÂO" textFill="#4e4d4d">
+                           <font>
+                              <Font name="System Bold" size="10.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="57.0" layoutY="42.0" opacity="0.29" prefHeight="3.0" prefWidth="550.0" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="57.0" />
+                        <HBox layoutX="166.0" layoutY="62.0" spacing="10.0" />
+                        <HBox layoutX="166.0" layoutY="92.0" spacing="10.0" />
+                        <HBox layoutX="166.0" layoutY="123.0" spacing="10.0" />
+                        <HBox alignment="CENTER" layoutX="80.0" layoutY="59.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton alignment="CENTER" contentDisplay="RIGHT" focusTraversable="false" onMouseClicked="#salvar" prefHeight="31.0" prefWidth="190.0" style="-fx-background-color: #34caef;" text="Salvar" textFill="WHITE">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="14.0" fitWidth="14.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/download-button.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </JFXButton>
+                              <Label alignment="CENTER" contentDisplay="RIGHT" onMouseClicked="#cancelar" prefHeight="33.0" prefWidth="190.0" style="-fx-border-color: #4e4d4d; -fx-border-radius: 3;" text="Cancelar" textFill="#4e4d4d">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <graphic>
+                                    <ImageView fitHeight="18.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../img/103661-32.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </children>
+</fx:root>

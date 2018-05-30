@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="592.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #396074, #232f35);" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fx:id="imgImagem" fitHeight="112.0" fitWidth="122.0" layoutX="189.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/img1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="335.0" layoutY="47.0" text="Lorem ipsum dolor sit amet" textFill="#f8f8f8" AnchorPane.rightAnchor="170.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="335.0" layoutY="68.0" maxWidth="195.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et commodo lorem, id imperdiet dolor. Nam tempor condimentum eleifend, nullam vel mi quam. " textFill="#bfbfbf" wrapText="true" AnchorPane.rightAnchor="170.0" />
+         </children>
+      </AnchorPane>
+      <Label layoutX="241.0" layoutY="239.0" text="Informação Nutricional" textFill="#32b97a" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="241.0">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="307.0" layoutY="271.0" prefHeight="51.0" prefWidth="87.0" text="Suspen vulputate, volt non" textAlignment="CENTER" textFill="#32b97a" wrapText="true" />
+      <AnchorPane layoutY="337.0" prefHeight="161.0" prefWidth="700.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" fillHeight="false" layoutX="44.0" layoutY="16.0" spacing="35.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Pane>
+                     <children>
+                        <Label layoutX="1.0" text="CALORIAS" textFill="#f39a1a">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutY="33.0" prefHeight="51.0" prefWidth="41.0" style="-fx-background-color: #f39a1a;">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/kcal.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label fx:id="lblkcal" alignment="CENTER" layoutX="46.0" layoutY="39.099998474121094" scaleY="1.6" text="420" textFill="#f39a1a">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="70.0" text="KCAL" textFill="#f39a1a">
+                           <font>
+                              <Font name="Simplifica" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="311.0" layoutY="41.0">
+                     <children>
+                        <Label layoutX="1.0" text="CARBOHIDRATOS" textFill="#0ada89">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutY="33.0" prefHeight="51.0" prefWidth="41.0" style="-fx-background-color: #0ada89;">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/carb.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label fx:id="lblCarbohidratos" alignment="CENTER" layoutX="46.0" layoutY="39.099998474121094" scaleY="1.6" text="30" textFill="#0ada89">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="70.0" text="G" textFill="#0ada89">
+                           <font>
+                              <Font name="Simplifica" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="360.0" layoutY="41.0">
+                     <children>
+                        <Label layoutX="1.0" text="PROTEÍNAS" textFill="#f73a36f2">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutY="33.0" prefHeight="51.0" prefWidth="41.0" style="-fx-background-color: #f73a36;">
+                           <children>
+                              <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/protein.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label fx:id="lblProteinas" alignment="CENTER" layoutX="46.0" layoutY="39.099998474121094" scaleY="1.6" text="6" textFill="#f73a36f2">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="70.0" text="G" textFill="#f73a36f2">
+                           <font>
+                              <Font name="Simplifica" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="410.0" layoutY="41.0">
+                     <children>
+                        <Label layoutX="1.0" text="GORDURAS" textFill="#31aff8">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutY="33.0" prefHeight="51.0" prefWidth="41.0" style="-fx-background-color: #31aff8;">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/fat.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label fx:id="lblGorduras" alignment="CENTER" layoutX="46.0" layoutY="39.099998474121094" scaleY="1.6" text="20" textFill="#31aff8">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="70.0" text="G" textFill="#31aff8">
+                           <font>
+                              <Font name="Simplifica" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="459.0" layoutY="41.0">
+                     <children>
+                        <Label layoutX="1.0" text="SÓDIO" textFill="#585c61">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <VBox alignment="CENTER" layoutY="33.0" prefHeight="51.0" prefWidth="41.0" style="-fx-background-color: #585c61;">
+                           <children>
+                              <ImageView fitHeight="30.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/salt.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                        <Label fx:id="lblSodio" alignment="CENTER" layoutX="46.0" layoutY="39.099998474121094" scaleY="1.6" text="172" textFill="#585c61">
+                           <font>
+                              <Font name="Simplifica" size="28.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" layoutX="78.0" layoutY="70.0" text="MG" textFill="#585c61">
+                           <font>
+                              <Font name="Simplifica" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</fx:root>

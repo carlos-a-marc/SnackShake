@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="450.0" style="-fx-background-color: #ffffff;" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="165.0" prefWidth="450.0" style="-fx-background-color: #031017;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <ImageView fitHeight="55.0" fitWidth="57.0" layoutX="198.0" layoutY="35.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/user.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="193.0" layoutY="100.0" text="Ola usuário!" textFill="#bcbcbc" />
+            <Label layoutX="143.0" layoutY="117.0" text="Seja bem vindo ao SnakeShake" textFill="#bcbcbc" />
+         </children>
+      </AnchorPane>
+      <JFXTextField fx:id="txtEmail" focusColor="#34caef" labelFloat="true" layoutX="107.0" layoutY="259.0" prefHeight="25.0" prefWidth="248.0" promptText="Email" />
+      <JFXTextField fx:id="txtSenha" focusColor="#34caef" labelFloat="true" layoutX="107.0" layoutY="310.0" prefHeight="25.0" prefWidth="248.0" promptText="Senha" />
+      <JFXButton alignment="CENTER" layoutX="136.0" layoutY="358.0" onMouseClicked="#logar" prefHeight="25.0" prefWidth="95.0" style="-fx-background-color: #34caef;" text="Login" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="250.0" layoutY="367.0" onMouseClicked="#cancelar" text="Cancelar" textFill="#4d4d4d" underline="true">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="78.0" layoutY="263.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/message-closed-envelope.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="17.0" fitWidth="22.0" layoutX="78.0" layoutY="314.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="41.0" fitWidth="46.0" layoutX="205.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/login.png" />
+         </image>
+      </ImageView>
+   </children>
+</fx:root>
