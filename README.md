@@ -12,7 +12,6 @@ SnackShake é uma solução de software que tem como objetivo proporcionar a seu
 
 Netbeans versão 8 ou superior(versão utilizada netbeans 8.2); <br />
 jdk versão 8 (versão utilizada 8u161); <br />
-Gerenciador utilizado WampServer versão 3.1.0. <br />
 
 Criação de layouts:
 Scene builder 8.3
